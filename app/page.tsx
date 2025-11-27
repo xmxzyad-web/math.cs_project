@@ -1,3 +1,4 @@
+'"use client";
 import React, { useState, useEffect } from 'react';
 import { Calculator, CheckCircle, Clock, Code, Play, Pause, RotateCcw, Trash2, Plus, BookOpen, Sigma, TrendingUp, Zap } from 'lucide-react';
 
