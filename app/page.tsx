@@ -1,4 +1,6 @@
 // app/page.tsx
+"use client";
+
 import React, { useState } from "react";
 import { LucideProps, Home, User, Settings } from "lucide-react";
 
@@ -19,13 +21,13 @@ export default function Page() {
       <div className="flex gap-4">
         {tabs.map(([id, label, Icon], index) => (
           <button
-            key={index} // استخدمنا index كـ key لتجنب مشاكل TypeScript
+            key={index} // index بديل للـ key لتجنب مشاكل TypeScript
             onClick={() => setActiveTab(id)}
             className={`px-5 py-3 flex items-center gap-2 rounded-xl font-bold transition ${
               activeTab === id ? "bg-blue-500 text-white" : "bg-gray-100 text-gray-800"
             }`}
           >
-            {Icon && <Icon className="w-5 h-5" />} {/* عرض الآيقونة */}
+            {Icon && <Icon className="w-5 h-5" />}
             {label}
           </button>
         ))}
