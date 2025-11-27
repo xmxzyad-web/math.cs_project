@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { Calculator, CheckCircle, Clock, Code, Play, Pause, RotateCcw, Trash2, Plus, BookOpen, Sigma, TrendingUp, Zap } from 'lucide-react';
 
@@ -1291,17 +1293,6 @@ export default function MathCSProject() {
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes gradient {
-          0%, 100% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-        }
-        .animate-gradient {
-          background-size: 200% 200%;
-          animation: gradient 3s ease infinite;
-        }
-      `}</style>
     </div>
   );
 }
